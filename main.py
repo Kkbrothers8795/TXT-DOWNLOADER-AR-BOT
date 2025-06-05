@@ -612,7 +612,7 @@ async def upload(bot: Client, m: Message):
                 url = url.replace("https://appx-transcoded-videos-mcdn.akamai.net.in/videos/yesofficer-data/", "")
                 name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "@").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
                 name = f'{str(count).zfill(3)}) {name1[:60]}'
-                cmd = f'yt-dlp -o "{name}%(ext)s" "{url}"'
+                cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
 
 
             elif "apps-s3-jw-prod.utkarshapp.com" in url:
