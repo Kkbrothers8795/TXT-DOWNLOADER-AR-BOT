@@ -35,7 +35,7 @@ ffprobe
 youtube-dl
 mediainfo
 aria2
-pycurl
+pycurl==7.45.2
 m3u8
 bs4
 pytube
